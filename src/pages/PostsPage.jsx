@@ -1,9 +1,10 @@
 import React from 'react';
+import PostList from "../components/PostList";
 
 const PostsPage = () => {
     return (
-        <div>
-            POSTS
+        <div className='posts-page'>
+            <PostList/>
         </div>
     );
 };
