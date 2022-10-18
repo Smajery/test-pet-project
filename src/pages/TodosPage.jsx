@@ -2,7 +2,7 @@ import React from 'react';
 
 const TodosPage = () => {
     return (
-        <div className='content'>
+        <div>
             TODOS
         </div>
     );

@@ -1,9 +1,9 @@
 import React from 'react';
-import Loader from "../UI/Loader/Loader";
+import Loader from "../components/UI/Loader/Loader";
 
 const HomePage = () => {
     return (
-        <div className='content'>
+        <div>
             <Loader/>
         </div>
     );

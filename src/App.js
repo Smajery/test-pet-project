@@ -8,7 +8,9 @@ const App = () => {
     return (
         <>
             <Header/>
-            <AppRouter/>
+            <div className='main'>
+                <AppRouter/>
+            </div>
             <Footer/>
         </>
     );

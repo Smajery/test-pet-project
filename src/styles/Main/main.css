@@ -1,6 +1,5 @@
-#root {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+@import url('src/styles/Content/PostsPage/posts-page.css');
+
+.main {
+    height: 90vh;
 }
