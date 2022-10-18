@@ -1,20 +1,26 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useActions} from "../hooks/useActions";
 import {useSelector} from "react-redux";
+import PostItem from "./PostItem";
 
 const PostList = () => {
 
     const {fetchPosts} = useActions()
     const posts = useSelector(state => state.PostsReducer.posts)
 
+    useEffect(() => {
+        fetchPosts()
+    }, [])
+
     return (
-        <div>
-            <button onClick={() => fetchPosts()}>Добавить посты</button>
-            {posts.map(post =>
-                <div key={post.id}>
-                    <div>{post.title}</div>
-                    <div>{post.body}</div>
-                </div>
+        <div className='post-list'>
+            {posts.map((post, index) =>
+                <PostItem
+                    key={post.id}
+                    title={post.title}
+                    body={post.body}
+                    number={index + 1}
+                />
             )}
         </div>
     );
