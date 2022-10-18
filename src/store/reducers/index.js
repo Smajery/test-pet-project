@@ -1,5 +1,7 @@
-import PostsReducer from './posts/index'
+import TodosReducer from "./todos";
+import PostsReducer from "./posts";
 
 export default {
     PostsReducer,
+    TodosReducer
 }

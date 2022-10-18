@@ -1,9 +1,11 @@
 import React from 'react';
+import TodosList from "../components/TodosList";
 
 const TodosPage = () => {
+
     return (
-        <div>
-            TODOS
+        <div className='todos-page'>
+            <TodosList/>
         </div>
     );
 };
