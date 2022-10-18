@@ -1,0 +1,16 @@
+.navbar {
+}
+
+.navbar__content {
+    display: flex;
+}
+
+.navbar__content li {
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar__content li:hover {
+    color: black;
+}

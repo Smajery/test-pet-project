@@ -1,0 +1,11 @@
+@import url('navbar.css');
+
+.header {
+    padding: 20px;
+    width: 100vw;
+    height: calc(100vh - 90vh);
+    background: #214a85;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
