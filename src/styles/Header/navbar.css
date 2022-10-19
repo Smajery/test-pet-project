@@ -8,9 +8,12 @@
 .navbar__content li {
     padding: 5px 10px;
     cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
     color: white;
 }
 
 .navbar__content li:hover {
-    color: black;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
 }

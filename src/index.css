@@ -34,6 +34,7 @@ body {
     min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
+    font-family: "Comic Sans MS";
     line-height: 1.5;
 }
 
