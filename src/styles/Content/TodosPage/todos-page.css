@@ -1,6 +1,30 @@
 .todos-page {
     min-height: 90vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.todos-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.todos-item {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.todos-item label{
+    padding: 0 10px;
+}
+
+.btn-add {
+    margin-top: 15px;
+    margin-left: auto;
+}
+
+.btn-del {
+    margin-left: auto;
 }

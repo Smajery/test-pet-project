@@ -1,6 +1,6 @@
 @import url('navbar.css');
 
-.header {
+header {
     padding: 20px;
     width: 100vw;
     height: calc(100vh - 90vh);

@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
-import {Route, Routes} from "react-router-dom";
+import React from 'react';
+import {Navigate, Route, Routes} from "react-router-dom";
 import {privateRoutes, publicRoutes} from "../routes";
-import {NOT_FOUND_PAGE_ROUTE} from "../utils/consts";
-import NotFoundPage from "../pages/NotFoundPage";
+import {HOME_PAGE_ROUTE, NOT_FOUND_PAGE_ROUTE} from "../utils/consts";
+import {useSelector} from "react-redux";
 
 const AppRouter = () => {
-    const [isAuth, setIsAuth] = useState(true)
+    const isAuth = useSelector(state => state.AuthReducer.isAuth)
 
     return (
         isAuth
@@ -18,7 +18,7 @@ const AppRouter = () => {
                         element={<route.component/>}
                     />
                 )}
-                <Route path={NOT_FOUND_PAGE_ROUTE} element={<NotFoundPage/>}/>
+                <Route path={NOT_FOUND_PAGE_ROUTE} element={<Navigate replace to={HOME_PAGE_ROUTE}/>}/>
             </Routes>
             :
             <Routes>
@@ -29,7 +29,7 @@ const AppRouter = () => {
                         element={<route.component/>}
                     />
                 )}
-                <Route path={NOT_FOUND_PAGE_ROUTE} element={<NotFoundPage/>}/>
+                <Route path={NOT_FOUND_PAGE_ROUTE} element={<Navigate replace to={HOME_PAGE_ROUTE}/>}/>
             </Routes>
     );
 };
